@@ -21,10 +21,10 @@ type CampaignStatus string
 
 // List of CampaignStatus
 const (
-	DELETED CampaignStatus = "Deleted"
-	ACTIVE CampaignStatus = "Active"
+	CampaignStatusDELETED CampaignStatus = "Deleted"
+	CampaignStatusACTIVE CampaignStatus = "Active"
 	PROCESSING CampaignStatus = "Processing"
-	SENDING CampaignStatus = "Sending"
+	CampaignStatusSENDING CampaignStatus = "Sending"
 	COMPLETED CampaignStatus = "Completed"
 	PAUSED CampaignStatus = "Paused"
 	CANCELLED CampaignStatus = "Cancelled"

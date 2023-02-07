@@ -21,7 +21,7 @@ type DeliveryOptimizationType string
 
 // List of DeliveryOptimizationType
 const (
-	NONE DeliveryOptimizationType = "None"
+	DeliveryOptimizationTypeNONE DeliveryOptimizationType = "None"
 	TO_ENGAGED_FIRST DeliveryOptimizationType = "ToEngagedFirst"
 	BY_OPEN_TIME DeliveryOptimizationType = "ByOpenTime"
 )

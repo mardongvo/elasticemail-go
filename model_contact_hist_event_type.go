@@ -21,10 +21,10 @@ type ContactHistEventType string
 
 // List of ContactHistEventType
 const (
-	OPENED ContactHistEventType = "Opened"
-	CLICKED ContactHistEventType = "Clicked"
-	BOUNCED ContactHistEventType = "Bounced"
-	UNSUBSCRIBED ContactHistEventType = "Unsubscribed"
+	ContactHistEventTypeOPENED ContactHistEventType = "Opened"
+	ContactHistEventTypeCLICKED ContactHistEventType = "Clicked"
+	ContactHistEventTypeBOUNCED ContactHistEventType = "Bounced"
+	ContactHistEventTypeUNSUBSCRIBED ContactHistEventType = "Unsubscribed"
 	COMPLAINED ContactHistEventType = "Complained"
 	ACTIVATED ContactHistEventType = "Activated"
 	TRANSACTIONAL_UNSUBSCRIBED ContactHistEventType = "TransactionalUnsubscribed"

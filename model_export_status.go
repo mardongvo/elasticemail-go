@@ -21,7 +21,7 @@ type ExportStatus string
 
 // List of ExportStatus
 const (
-	ERROR ExportStatus = "Error"
+	ExportStatusERROR ExportStatus = "Error"
 	LOADING ExportStatus = "Loading"
 	READY ExportStatus = "Ready"
 	EXPIRED ExportStatus = "Expired"

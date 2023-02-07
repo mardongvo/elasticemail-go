@@ -17,7 +17,7 @@ import (
 )
 
 // NewApiKey Newly generated ApiKey with Token
-type NewApiKey struct {
+type NewApiKeyType struct {
 	// Unique token to be used in the system
 	Token *string `json:"Token,omitempty"`
 	// Access level or permission to be assigned to this ApiKey.
@@ -38,21 +38,21 @@ type NewApiKey struct {
 // This constructor will assign default values to properties that have it defined,
 // and makes sure properties required by API are set, but the set of arguments
 // will change when the set of required properties is changed
-func NewNewApiKey() *NewApiKey {
-	this := NewApiKey{}
+func NewNewApiKeyType() *NewApiKeyType {
+	this := NewApiKeyType{}
 	return &this
 }
 
 // NewNewApiKeyWithDefaults instantiates a new NewApiKey object
 // This constructor will only assign default values to properties that have it defined,
 // but it doesn't guarantee that properties required by API are set
-func NewNewApiKeyWithDefaults() *NewApiKey {
-	this := NewApiKey{}
+func NewNewApiKeyWithDefaults() *NewApiKeyType {
+	this := NewApiKeyType{}
 	return &this
 }
 
 // GetToken returns the Token field value if set, zero value otherwise.
-func (o *NewApiKey) GetToken() string {
+func (o *NewApiKeyType) GetToken() string {
 	if o == nil || isNil(o.Token) {
 		var ret string
 		return ret
@@ -62,7 +62,7 @@ func (o *NewApiKey) GetToken() string {
 
 // GetTokenOk returns a tuple with the Token field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *NewApiKey) GetTokenOk() (*string, bool) {
+func (o *NewApiKeyType) GetTokenOk() (*string, bool) {
 	if o == nil || isNil(o.Token) {
     return nil, false
 	}
@@ -70,7 +70,7 @@ func (o *NewApiKey) GetTokenOk() (*string, bool) {
 }
 
 // HasToken returns a boolean if a field has been set.
-func (o *NewApiKey) HasToken() bool {
+func (o *NewApiKeyType) HasToken() bool {
 	if o != nil && !isNil(o.Token) {
 		return true
 	}
@@ -79,12 +79,12 @@ func (o *NewApiKey) HasToken() bool {
 }
 
 // SetToken gets a reference to the given string and assigns it to the Token field.
-func (o *NewApiKey) SetToken(v string) {
+func (o *NewApiKeyType) SetToken(v string) {
 	o.Token = &v
 }
 
 // GetAccessLevel returns the AccessLevel field value if set, zero value otherwise.
-func (o *NewApiKey) GetAccessLevel() []AccessLevel {
+func (o *NewApiKeyType) GetAccessLevel() []AccessLevel {
 	if o == nil || isNil(o.AccessLevel) {
 		var ret []AccessLevel
 		return ret
@@ -94,7 +94,7 @@ func (o *NewApiKey) GetAccessLevel() []AccessLevel {
 
 // GetAccessLevelOk returns a tuple with the AccessLevel field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *NewApiKey) GetAccessLevelOk() ([]AccessLevel, bool) {
+func (o *NewApiKeyType) GetAccessLevelOk() ([]AccessLevel, bool) {
 	if o == nil || isNil(o.AccessLevel) {
     return nil, false
 	}
@@ -102,7 +102,7 @@ func (o *NewApiKey) GetAccessLevelOk() ([]AccessLevel, bool) {
 }
 
 // HasAccessLevel returns a boolean if a field has been set.
-func (o *NewApiKey) HasAccessLevel() bool {
+func (o *NewApiKeyType) HasAccessLevel() bool {
 	if o != nil && !isNil(o.AccessLevel) {
 		return true
 	}
@@ -111,12 +111,12 @@ func (o *NewApiKey) HasAccessLevel() bool {
 }
 
 // SetAccessLevel gets a reference to the given []AccessLevel and assigns it to the AccessLevel field.
-func (o *NewApiKey) SetAccessLevel(v []AccessLevel) {
+func (o *NewApiKeyType) SetAccessLevel(v []AccessLevel) {
 	o.AccessLevel = v
 }
 
 // GetName returns the Name field value if set, zero value otherwise.
-func (o *NewApiKey) GetName() string {
+func (o *NewApiKeyType) GetName() string {
 	if o == nil || isNil(o.Name) {
 		var ret string
 		return ret
@@ -126,7 +126,7 @@ func (o *NewApiKey) GetName() string {
 
 // GetNameOk returns a tuple with the Name field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *NewApiKey) GetNameOk() (*string, bool) {
+func (o *NewApiKeyType) GetNameOk() (*string, bool) {
 	if o == nil || isNil(o.Name) {
     return nil, false
 	}
@@ -134,7 +134,7 @@ func (o *NewApiKey) GetNameOk() (*string, bool) {
 }
 
 // HasName returns a boolean if a field has been set.
-func (o *NewApiKey) HasName() bool {
+func (o *NewApiKeyType) HasName() bool {
 	if o != nil && !isNil(o.Name) {
 		return true
 	}
@@ -143,12 +143,12 @@ func (o *NewApiKey) HasName() bool {
 }
 
 // SetName gets a reference to the given string and assigns it to the Name field.
-func (o *NewApiKey) SetName(v string) {
+func (o *NewApiKeyType) SetName(v string) {
 	o.Name = &v
 }
 
 // GetDateCreated returns the DateCreated field value if set, zero value otherwise.
-func (o *NewApiKey) GetDateCreated() time.Time {
+func (o *NewApiKeyType) GetDateCreated() time.Time {
 	if o == nil || isNil(o.DateCreated) {
 		var ret time.Time
 		return ret
@@ -158,7 +158,7 @@ func (o *NewApiKey) GetDateCreated() time.Time {
 
 // GetDateCreatedOk returns a tuple with the DateCreated field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *NewApiKey) GetDateCreatedOk() (*time.Time, bool) {
+func (o *NewApiKeyType) GetDateCreatedOk() (*time.Time, bool) {
 	if o == nil || isNil(o.DateCreated) {
     return nil, false
 	}
@@ -166,7 +166,7 @@ func (o *NewApiKey) GetDateCreatedOk() (*time.Time, bool) {
 }
 
 // HasDateCreated returns a boolean if a field has been set.
-func (o *NewApiKey) HasDateCreated() bool {
+func (o *NewApiKeyType) HasDateCreated() bool {
 	if o != nil && !isNil(o.DateCreated) {
 		return true
 	}
@@ -175,12 +175,12 @@ func (o *NewApiKey) HasDateCreated() bool {
 }
 
 // SetDateCreated gets a reference to the given time.Time and assigns it to the DateCreated field.
-func (o *NewApiKey) SetDateCreated(v time.Time) {
+func (o *NewApiKeyType) SetDateCreated(v time.Time) {
 	o.DateCreated = &v
 }
 
 // GetLastUse returns the LastUse field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *NewApiKey) GetLastUse() time.Time {
+func (o *NewApiKeyType) GetLastUse() time.Time {
 	if o == nil || isNil(o.LastUse.Get()) {
 		var ret time.Time
 		return ret
@@ -191,7 +191,7 @@ func (o *NewApiKey) GetLastUse() time.Time {
 // GetLastUseOk returns a tuple with the LastUse field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *NewApiKey) GetLastUseOk() (*time.Time, bool) {
+func (o *NewApiKeyType) GetLastUseOk() (*time.Time, bool) {
 	if o == nil {
     return nil, false
 	}
@@ -199,7 +199,7 @@ func (o *NewApiKey) GetLastUseOk() (*time.Time, bool) {
 }
 
 // HasLastUse returns a boolean if a field has been set.
-func (o *NewApiKey) HasLastUse() bool {
+func (o *NewApiKeyType) HasLastUse() bool {
 	if o != nil && o.LastUse.IsSet() {
 		return true
 	}
@@ -208,21 +208,21 @@ func (o *NewApiKey) HasLastUse() bool {
 }
 
 // SetLastUse gets a reference to the given NullableTime and assigns it to the LastUse field.
-func (o *NewApiKey) SetLastUse(v time.Time) {
+func (o *NewApiKeyType) SetLastUse(v time.Time) {
 	o.LastUse.Set(&v)
 }
 // SetLastUseNil sets the value for LastUse to be an explicit nil
-func (o *NewApiKey) SetLastUseNil() {
+func (o *NewApiKeyType) SetLastUseNil() {
 	o.LastUse.Set(nil)
 }
 
 // UnsetLastUse ensures that no value is present for LastUse, not even an explicit nil
-func (o *NewApiKey) UnsetLastUse() {
+func (o *NewApiKeyType) UnsetLastUse() {
 	o.LastUse.Unset()
 }
 
 // GetExpires returns the Expires field value if set, zero value otherwise (both if not set or set to explicit null).
-func (o *NewApiKey) GetExpires() time.Time {
+func (o *NewApiKeyType) GetExpires() time.Time {
 	if o == nil || isNil(o.Expires.Get()) {
 		var ret time.Time
 		return ret
@@ -233,7 +233,7 @@ func (o *NewApiKey) GetExpires() time.Time {
 // GetExpiresOk returns a tuple with the Expires field value if set, nil otherwise
 // and a boolean to check if the value has been set.
 // NOTE: If the value is an explicit nil, `nil, true` will be returned
-func (o *NewApiKey) GetExpiresOk() (*time.Time, bool) {
+func (o *NewApiKeyType) GetExpiresOk() (*time.Time, bool) {
 	if o == nil {
     return nil, false
 	}
@@ -241,7 +241,7 @@ func (o *NewApiKey) GetExpiresOk() (*time.Time, bool) {
 }
 
 // HasExpires returns a boolean if a field has been set.
-func (o *NewApiKey) HasExpires() bool {
+func (o *NewApiKeyType) HasExpires() bool {
 	if o != nil && o.Expires.IsSet() {
 		return true
 	}
@@ -250,21 +250,21 @@ func (o *NewApiKey) HasExpires() bool {
 }
 
 // SetExpires gets a reference to the given NullableTime and assigns it to the Expires field.
-func (o *NewApiKey) SetExpires(v time.Time) {
+func (o *NewApiKeyType) SetExpires(v time.Time) {
 	o.Expires.Set(&v)
 }
 // SetExpiresNil sets the value for Expires to be an explicit nil
-func (o *NewApiKey) SetExpiresNil() {
+func (o *NewApiKeyType) SetExpiresNil() {
 	o.Expires.Set(nil)
 }
 
 // UnsetExpires ensures that no value is present for Expires, not even an explicit nil
-func (o *NewApiKey) UnsetExpires() {
+func (o *NewApiKeyType) UnsetExpires() {
 	o.Expires.Unset()
 }
 
 // GetRestrictAccessToIPRange returns the RestrictAccessToIPRange field value if set, zero value otherwise.
-func (o *NewApiKey) GetRestrictAccessToIPRange() []string {
+func (o *NewApiKeyType) GetRestrictAccessToIPRange() []string {
 	if o == nil || isNil(o.RestrictAccessToIPRange) {
 		var ret []string
 		return ret
@@ -274,7 +274,7 @@ func (o *NewApiKey) GetRestrictAccessToIPRange() []string {
 
 // GetRestrictAccessToIPRangeOk returns a tuple with the RestrictAccessToIPRange field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *NewApiKey) GetRestrictAccessToIPRangeOk() ([]string, bool) {
+func (o *NewApiKeyType) GetRestrictAccessToIPRangeOk() ([]string, bool) {
 	if o == nil || isNil(o.RestrictAccessToIPRange) {
     return nil, false
 	}
@@ -282,7 +282,7 @@ func (o *NewApiKey) GetRestrictAccessToIPRangeOk() ([]string, bool) {
 }
 
 // HasRestrictAccessToIPRange returns a boolean if a field has been set.
-func (o *NewApiKey) HasRestrictAccessToIPRange() bool {
+func (o *NewApiKeyType) HasRestrictAccessToIPRange() bool {
 	if o != nil && !isNil(o.RestrictAccessToIPRange) {
 		return true
 	}
@@ -291,11 +291,11 @@ func (o *NewApiKey) HasRestrictAccessToIPRange() bool {
 }
 
 // SetRestrictAccessToIPRange gets a reference to the given []string and assigns it to the RestrictAccessToIPRange field.
-func (o *NewApiKey) SetRestrictAccessToIPRange(v []string) {
+func (o *NewApiKeyType) SetRestrictAccessToIPRange(v []string) {
 	o.RestrictAccessToIPRange = v
 }
 
-func (o NewApiKey) MarshalJSON() ([]byte, error) {
+func (o NewApiKeyType) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if !isNil(o.Token) {
 		toSerialize["Token"] = o.Token
@@ -322,15 +322,15 @@ func (o NewApiKey) MarshalJSON() ([]byte, error) {
 }
 
 type NullableNewApiKey struct {
-	value *NewApiKey
+	value *NewApiKeyType
 	isSet bool
 }
 
-func (v NullableNewApiKey) Get() *NewApiKey {
+func (v NullableNewApiKey) Get() *NewApiKeyType {
 	return v.value
 }
 
-func (v *NullableNewApiKey) Set(val *NewApiKey) {
+func (v *NullableNewApiKey) Set(val *NewApiKeyType) {
 	v.value = val
 	v.isSet = true
 }
@@ -344,7 +344,7 @@ func (v *NullableNewApiKey) Unset() {
 	v.isSet = false
 }
 
-func NewNullableNewApiKey(val *NewApiKey) *NullableNewApiKey {
+func NewNullableNewApiKey(val *NewApiKeyType) *NullableNewApiKey {
 	return &NullableNewApiKey{value: val, isSet: true}
 }
 

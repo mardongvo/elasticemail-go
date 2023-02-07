@@ -21,9 +21,9 @@ type EmailValidationStatus string
 
 // List of EmailValidationStatus
 const (
-	NONE EmailValidationStatus = "None"
+	EmailValidationStatusNONE EmailValidationStatus = "None"
 	VALID EmailValidationStatus = "Valid"
-	UNKNOWN EmailValidationStatus = "Unknown"
+	EmailValidationStatusUNKNOWN EmailValidationStatus = "Unknown"
 	RISKY EmailValidationStatus = "Risky"
 	INVALID EmailValidationStatus = "Invalid"
 )

@@ -21,7 +21,7 @@ type CompressionFormat string
 
 // List of CompressionFormat
 const (
-	NONE CompressionFormat = "None"
+	CompressionFormatNONE CompressionFormat = "None"
 	ZIP CompressionFormat = "Zip"
 )
 

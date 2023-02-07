@@ -21,7 +21,7 @@ type AccessLevel string
 
 // List of AccessLevel
 const (
-	NONE AccessLevel = "None"
+	AccessLevelNONE AccessLevel = "None"
 	VIEW_ACCOUNT AccessLevel = "ViewAccount"
 	VIEW_CONTACTS AccessLevel = "ViewContacts"
 	VIEW_FORMS AccessLevel = "ViewForms"

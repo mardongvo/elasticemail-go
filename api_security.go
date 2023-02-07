@@ -529,7 +529,7 @@ func (r ApiSecurityApikeysPostRequest) ApiKeyPayload(apiKeyPayload ApiKeyPayload
 	return r
 }
 
-func (r ApiSecurityApikeysPostRequest) Execute() (*NewApiKey, *http.Response, error) {
+func (r ApiSecurityApikeysPostRequest) Execute() (*NewApiKeyType, *http.Response, error) {
 	return r.ApiService.SecurityApikeysPostExecute(r)
 }
 
@@ -550,12 +550,12 @@ func (a *SecurityApiService) SecurityApikeysPost(ctx context.Context) ApiSecurit
 
 // Execute executes the request
 //  @return NewApiKey
-func (a *SecurityApiService) SecurityApikeysPostExecute(r ApiSecurityApikeysPostRequest) (*NewApiKey, *http.Response, error) {
+func (a *SecurityApiService) SecurityApikeysPostExecute(r ApiSecurityApikeysPostRequest) (*NewApiKeyType, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodPost
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  *NewApiKey
+		localVarReturnValue  *NewApiKeyType
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "SecurityApiService.SecurityApikeysPost")
@@ -1147,7 +1147,7 @@ func (r ApiSecuritySmtpPostRequest) SmtpCredentialsPayload(smtpCredentialsPayloa
 	return r
 }
 
-func (r ApiSecuritySmtpPostRequest) Execute() (*NewSmtpCredentials, *http.Response, error) {
+func (r ApiSecuritySmtpPostRequest) Execute() (*NewSmtpCredentialsType, *http.Response, error) {
 	return r.ApiService.SecuritySmtpPostExecute(r)
 }
 
@@ -1168,12 +1168,12 @@ func (a *SecurityApiService) SecuritySmtpPost(ctx context.Context) ApiSecuritySm
 
 // Execute executes the request
 //  @return NewSmtpCredentials
-func (a *SecurityApiService) SecuritySmtpPostExecute(r ApiSecuritySmtpPostRequest) (*NewSmtpCredentials, *http.Response, error) {
+func (a *SecurityApiService) SecuritySmtpPostExecute(r ApiSecuritySmtpPostRequest) (*NewSmtpCredentialsType, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodPost
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  *NewSmtpCredentials
+		localVarReturnValue  *NewSmtpCredentialsType
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "SecurityApiService.SecuritySmtpPost")

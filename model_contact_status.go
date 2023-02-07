@@ -25,7 +25,7 @@ const (
 	ENGAGED ContactStatus = "Engaged"
 	ACTIVE ContactStatus = "Active"
 	BOUNCED ContactStatus = "Bounced"
-	UNSUBSCRIBED ContactStatus = "Unsubscribed"
+	ContactStatusUNSUBSCRIBED ContactStatus = "Unsubscribed"
 	ABUSE ContactStatus = "Abuse"
 	INACTIVE ContactStatus = "Inactive"
 	STALE ContactStatus = "Stale"

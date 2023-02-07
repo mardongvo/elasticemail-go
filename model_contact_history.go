@@ -39,7 +39,7 @@ type ContactHistory struct {
 // will change when the set of required properties is changed
 func NewContactHistory() *ContactHistory {
 	this := ContactHistory{}
-	var eventType ContactHistEventType = OPENED
+	var eventType ContactHistEventType = ContactHistEventTypeOPENED
 	this.EventType = &eventType
 	return &this
 }
@@ -49,7 +49,7 @@ func NewContactHistory() *ContactHistory {
 // but it doesn't guarantee that properties required by API are set
 func NewContactHistoryWithDefaults() *ContactHistory {
 	this := ContactHistory{}
-	var eventType ContactHistEventType = OPENED
+	var eventType ContactHistEventType = ContactHistEventTypeOPENED
 	this.EventType = &eventType
 	return &this
 }

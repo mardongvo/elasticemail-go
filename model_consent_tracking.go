@@ -21,7 +21,7 @@ type ConsentTracking string
 
 // List of ConsentTracking
 const (
-	UNKNOWN ConsentTracking = "Unknown"
+	ConsentTrackingUNKNOWN ConsentTracking = "Unknown"
 	ALLOW ConsentTracking = "Allow"
 	DENY ConsentTracking = "Deny"
 )

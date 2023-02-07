@@ -38,7 +38,7 @@ func NewTemplate() *Template {
 	this := Template{}
 	var templateType TemplateType = RAW_HTML
 	this.TemplateType = &templateType
-	var templateScope TemplateScope = PERSONAL
+	var templateScope TemplateScope = TemplateScopePERSONAL
 	this.TemplateScope = &templateScope
 	return &this
 }
@@ -50,7 +50,7 @@ func NewTemplateWithDefaults() *Template {
 	this := Template{}
 	var templateType TemplateType = RAW_HTML
 	this.TemplateType = &templateType
-	var templateScope TemplateScope = PERSONAL
+	var templateScope TemplateScope = TemplateScopePERSONAL
 	this.TemplateScope = &templateScope
 	return &this
 }

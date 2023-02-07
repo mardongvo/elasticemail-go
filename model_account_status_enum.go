@@ -24,7 +24,7 @@ const (
 	DISABLED AccountStatusEnum = "Disabled"
 	UNDER_REVIEW AccountStatusEnum = "UnderReview"
 	NEVER_SIGNED_IN AccountStatusEnum = "NeverSignedIn"
-	ACTIVE AccountStatusEnum = "Active"
+	AccountStatusEnumACTIVE AccountStatusEnum = "Active"
 )
 
 // All allowed values of AccountStatusEnum enum

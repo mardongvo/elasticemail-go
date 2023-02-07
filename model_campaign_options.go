@@ -34,7 +34,7 @@ type CampaignOptions struct {
 // will change when the set of required properties is changed
 func NewCampaignOptions() *CampaignOptions {
 	this := CampaignOptions{}
-	var deliveryOptimization DeliveryOptimizationType = NONE
+	var deliveryOptimization DeliveryOptimizationType = DeliveryOptimizationTypeNONE
 	this.DeliveryOptimization = &deliveryOptimization
 	return &this
 }
@@ -44,7 +44,7 @@ func NewCampaignOptions() *CampaignOptions {
 // but it doesn't guarantee that properties required by API are set
 func NewCampaignOptionsWithDefaults() *CampaignOptions {
 	this := CampaignOptions{}
-	var deliveryOptimization DeliveryOptimizationType = NONE
+	var deliveryOptimization DeliveryOptimizationType = DeliveryOptimizationTypeNONE
 	this.DeliveryOptimization = &deliveryOptimization
 	return &this
 }

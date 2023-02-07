@@ -23,7 +23,7 @@ type TemplateScopeType string
 const (
 	PERSONAL TemplateScopeType = "Personal"
 	GLOBAL TemplateScopeType = "Global"
-	DRAFT TemplateScopeType = "Draft"
+	TemplateScopeTypeDRAFT TemplateScopeType = "Draft"
 )
 
 func (v *TemplateScopeType) UnmarshalJSON(src []byte) error {

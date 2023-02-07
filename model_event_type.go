@@ -24,7 +24,7 @@ const (
 	SUBMISSION EventType = "Submission"
 	FAILED_ATTEMPT EventType = "FailedAttempt"
 	BOUNCE EventType = "Bounce"
-	SENT EventType = "Sent"
+	EventTypeSENT EventType = "Sent"
 	OPEN EventType = "Open"
 	CLICK EventType = "Click"
 	UNSUBSCRIBE EventType = "Unsubscribe"
